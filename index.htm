@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LLM Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="lightning-bg"></div>
+
+  <div class="navbar">
+    <button id="sidebarToggle"><i class="fas fa-bars"></i></button>
+    <div class="nav-title">LLM Chat</div>
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+   <!-- Inside .navbar -->
+<div class="nav-right-items">
+  <button class="download-btn">
+    <i class="fas fa-download"></i> 
+  </button>
+
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+</button>
+
+    </label>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <h3>Menu</h3>
+    <ul>
+      <li>New Chat</li>
+      <li>Saved</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="main-container">
+    <div class="chat-box" id="chatBox">
+      <!-- Chat messages appear here -->
+    </div>
+
+    <!-- Input area fixed at bottom -->
+    <div class="input-area">
+      <label for="fileInput" class="upload-icon">
+        <i class="fas fa-paperclip"></i>
+      </label>
+      <input type="file" id="fileInput" style="display: none;" />
+      
+      <textarea id="messageInput" placeholder="Type a message..." rows="1"></textarea>
+      
+      <button id="sendBtn" class="send-icon"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>\
+  <div class="theme-toggle">
+  <label class="switch">
+    <input type="checkbox" id="themeSwitch">
+    <span class="slider round"></span>
+  </label>
+</div>
+
+</body>
+</html>
