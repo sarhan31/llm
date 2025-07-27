@@ -403,16 +403,86 @@ body.dark .sidebar {
   gap: 12px;
 }
 
-@media screen and (max-width: 480px) {
+/* ===== MEDIA QUERIES ===== */
+
+/* For laptops (width between 769px and 1200px) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .main-container {
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .nav-title {
+    font-size: 20px;
+  }
+
+  .chat-box {
+    height: 450px;
+  }
+
   .download-btn {
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+/* For phones (width up to 768px) */
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .navbar button {
+    font-size: 20px;
+  }
+
+  .nav-title {
+    font-size: 18px;
   }
 
   .nav-right-items {
-    gap: 6px;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .chat-box {
+    height: 200px;
+  }
+
+  .chat-bubble {
+    max-width: 85%;
+    font-size: 14px;
+  }
+
+  .download-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .typing span {
+    width: 6px;
+    height: 6px;
   }
 }
+
 
 
 
