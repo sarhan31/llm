@@ -428,6 +428,7 @@ body.dark .sidebar {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    z-index: 999;
   }
 
   .navbar button {
@@ -449,7 +450,23 @@ body.dark .sidebar {
   .sidebar {
     width: 200px;
     padding: 15px;
+   
   }
+ .sidebar-overlay {
+      z-index: 1000;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1000;
+  display: none;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+    }
 
   .chat-box {
     height: 100%;
