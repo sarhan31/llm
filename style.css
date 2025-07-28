@@ -466,12 +466,12 @@ body.dark .sidebar {
   display: block;
 }
 
-    }
+    
 
   .chat-box {
     height: 100%;
     position: fixed;
-    bottom: ;
+  
     left: 0;
     right: 0;
     overflow-y: scroll;
