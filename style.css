@@ -452,7 +452,7 @@ body.dark .sidebar {
   }
 
   .chat-box {
-    height: 200px;
+    height: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
