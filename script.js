@@ -76,7 +76,7 @@ fileInput?.addEventListener('change', (e) => {
 });
 
 // Responsive sidebar toggle on resize
-window.addEventListener('click', () => {
+window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     sidebar.classList.remove('show');
     sidebar.classList.remove('slide-in');
