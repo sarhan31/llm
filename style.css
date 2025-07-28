@@ -436,6 +436,8 @@ body.dark .sidebar {
 
   .nav-title {
     font-size: 18px;
+    text-align: center;
+    margin-left: 140px;
   }
 
   .nav-right-items {
@@ -462,11 +464,14 @@ body.dark .sidebar {
     padding: 6px 10px;
     font-size: 12px;
     margin: 0;
+    margin-left: 310px;
+    margin-bottom: 100px;
   }
 
   .typing span {
     width: 6px;
     height: 6px;
+    
   }
 }
 
